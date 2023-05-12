@@ -1,0 +1,34 @@
+#header {
+    background-color: lightblue;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+#footer {
+    background-color: lightblue;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#main {
+    margin-top: 25px;
+}
+
+.logo {
+    height: 25%;
+}
+
+#logos {
+    padding-top: 15px;
+    background-image: url(slike/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo > a > img {
+    border: 3px darkblue dashed;
+}
+
+.logo a:hover img {
+    border: 6px red dashed;
+}

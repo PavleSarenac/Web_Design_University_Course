@@ -1,0 +1,49 @@
+#stranica {
+    width: 60%;
+}
+
+#header {
+    background-color: #99bbff;
+    height: 75px;
+    margin-bottom: 5px;
+}
+
+#header-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-link:hover {
+    font-size: 22px;
+    color: #003399;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    margin-top: 5px;
+    border-collapse: separate;
+}
+
+th, td {
+    border: 3px dotted black;
+    padding: 15px;
+}
+
+#slike {
+    border: 3px solid black;
+}

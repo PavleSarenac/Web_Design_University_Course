@@ -1,0 +1,77 @@
+#header-text {
+    font-size: 28px;
+    color: #5e5e5e;
+    font-weight: bold;
+    margin-top: -3px;
+    text-align: left;
+}
+
+#header {
+    height: 45px;
+    background-color: lightgreen;
+}
+
+#footer {
+    height: 30px;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+#footer-text {
+    font-size: 18px;
+    font-style: italic;
+    color: #5e5e5e;
+    font-weight: bold;
+    text-align: center;
+}
+
+#dugme {
+    margin-top: 3px;
+    margin-left: 90px;
+    background-color: darkgreen;
+    color: white;
+}
+
+#main {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: rgb(220, 220, 220);
+}
+
+.table-striped > tbody > tr:nth-child(even) > td {
+    background-color: rgb(233, 233, 233);
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td {
+    background-color: white;
+}
+
+#nordeus {
+    height: auto;
+    background-color: #e7482a;
+}
+
+#nvidia {
+    height: auto;
+    background-color: #000000;
+}
+
+#microsoft {
+    height: auto;
+    background-color: #575352;
+}
+
+#facebook {
+    height: auto;
+    background-color: #3b5998;
+}
+
+a > img:hover {
+    border-left-style: dotted;
+    border-left-color: white;
+    border-right-style: dotted;
+    border-right-color: white;
+}

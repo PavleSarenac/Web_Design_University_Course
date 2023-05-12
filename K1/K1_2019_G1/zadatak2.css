@@ -1,0 +1,61 @@
+#header {
+    text-align: center;
+    background-color: #04B4AE;
+    height: 70px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+#slikaZuba {
+    height: 60px;
+    margin-top: 6px;
+}
+
+#navTekst {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#prviNavLink {
+    margin-left: 535px;
+}
+
+#navigacija {
+    margin-bottom: 10px;
+}
+
+#naslov1 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#leviMeni {
+    background-color: #E6E6E6;
+    padding-top: 25px;
+    height: 500px;
+    font-size: 20px;
+}
+
+#slikaDeteta {
+    height: 160px;
+}
+
+#naslov2 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#kontakt {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+}

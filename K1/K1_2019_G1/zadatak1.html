@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #page {
+            width: 70%;
+            justify-content: center;
+        }
+
+        #header {
+            background-color: #2D383A;
+            height: 100px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        #footer {
+            background-color: #2D383A;
+            height: 60px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            color: white;
+            font-weight: bold;
+        }
+
+        #pretraga {
+            background-color: #8B8680;
+            height: 40px;
+            text-align: center;
+            padding-top: 3px;
+        }
+
+        #items {
+            margin-right: 5px;
+        }
+
+        #forma {
+            background-color: #C8C8CD;
+        }
+
+        #padajuciDugme {
+            background-color: white;
+        }
+
+        #polje {
+            width: 85%;
+            text-align: center;
+            margin-left: 19px;
+            margin-bottom: 15px;
+        }
+
+        #horLinija {
+            width: 80%;
+            margin-left: 25px;
+        }
+
+        #pretragaDugme {
+            background-color: white;
+            width: 35%;
+            margin-left: 150px;
+            margin-bottom: 20px;
+        }
+
+        #prazanDeo {
+            background-color: #8B8680;
+            height: 100px;
+        }
+
+        #heading {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: xx-large;
+        }
+
+        #main {
+            background-color: #C3CDE6;
+        }
+
+        #linkovi {
+            text-align: center;
+        }
+
+        #bojaLinka {
+            color: #2D383A;
+        }
+
+        #bitno {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="page" class="container">
+        <div class="row">
+            <div id="header" class="col-sm-12">
+                <h1 style="color: white; font-family: 'Times New Roman', Times, serif; font-weight: bolder;">
+                    <i>Prodavnica računara</i>
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div id="pretraga" class="row">
+                    <h3 style="color: white; font-family: 'Times New Roman', Times, serif;">
+                        <i>PRETRAGA</i>
+                    </h3>
+                </div>
+                <div id="forma" class="row">
+                    <ul type="none" style="margin-top: 10px;">
+                        <li><input type="checkbox" name="" id="items">Acer</li>
+                        <li><input type="checkbox" name="" id="items">HP</li>
+                        <li><input type="checkbox" name="" id="items">Lenovo</li>
+                    </ul>
+                    <hr id="horLinija">
+                    <div class="col" style="text-align: right;">
+                        <label for="" style="margin-top: 5px;">RAM:</label>
+                    </div>
+                    <div class="col" style="text-align: left; padding-bottom: 10px;">
+                        <div class="dropdown">
+                            <button id="padajuciDugme" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                2GB
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="" class="dropdown-item">2GB</a></li>
+                                <li><a href="" class="dropdown-item">4GB</a></li>
+                                <li><a href="" class="dropdown-item">8GB</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr id="horLinija">
+                    <ul type="none" style="margin-top: 10px;">
+                        <li><input type="radio" name="cena" id="items">do 30.000</li>
+                        <li><input type="radio" name="cena" id="items">od 30.000 do 100.000</li>
+                        <li><input type="radio" name="cena" id="items">preko 100.000</li>
+                    </ul>
+                    <hr id="horLinija">
+                    <input type="text" name="" id="polje" placeholder="Unesite pojam za pretragu">
+                    <hr id="horLinija">
+                    <button id="pretragaDugme">Pretraga</button>
+                </div>
+                <div class="row" id="prazanDeo"></div>
+            </div>
+            <div id="main" class="col-sm-9">
+                <div class="row">
+                    <div id="heading">Preporučujemo za Vas</div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="slike/laptop1.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="slike/laptop2.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="slike/laptop3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="linkovi" class="col">
+                        <a href="detalji.html" id="bojaLinka">Prikaži detalje</a>
+                    </div>
+                    <div id="linkovi" class="col">
+                        <a href="detalji.html" id="bojaLinka">Prikaži detalje</a>
+                    </div>
+                    <div id="linkovi" class="col">
+                        <a href="detalji.html" id="bojaLinka">Prikaži detalje</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="heading">O nama</div>
+                </div>
+                <div class="row">
+                    <ul type="square" style="margin-left: 50px;">
+                        <li>
+                            <span id="bitno">Lorem Ipsum</span> dolor sit amet, corpora nominavi philosophia eam an.
+                        </li>
+                        <li>
+                            <span id="bitno">Usu</span> in sale  dolorem,  cum  ut  autem  quando,  vel  fugit  vivendum  interpretaris  ei.
+                        </li>
+                        <li style="width: 95%;">
+                            <span id="bitno">Iusto</span> audiam consequuntur quo ad, ei eam quodsi recteque theophrastus, cetero suscipit consectetuer no nam. Sed solum iudicabit eu, eu probatus corrumpit voluptatibus ius, inani tantas pri ut.
+                            <ol type="I">
+                                <li>Petar Petrović</li>
+                                <li>Ana Anić</li>
+                                <li>Marko Marković</li>
+                            </ol>
+                        </li>
+                        <li style="width: 95%;">
+                            <span id="bitno">Ex</span> qui sumo iriure, ut has dolorum placerat, duo an tritani deseruisse. Virtute patrioque ullamcorper mea ex, vim eu ullum cotidieque.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="footer" class="col-sm-12">
+                Sva prava su zadržana.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

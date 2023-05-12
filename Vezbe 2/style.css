@@ -1,0 +1,36 @@
+table, p {
+    background-color: blue;
+    color: red;
+}
+
+#idP {
+    color: green;
+}
+
+.p1 {
+    color: purple;
+}
+
+p#idP {
+    color: blue;
+}
+
+a[href="https://www.etf.bg.ac.rs"] {
+    color: yellow;
+}
+
+div p {
+    color: lightblue;
+}
+
+div img.slika1 {
+    color: aliceblue;
+}
+
+table img#img1 {
+    color: aqua;
+}
+
+p#p1, a.a2 {
+    color: azure;
+}

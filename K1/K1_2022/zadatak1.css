@@ -1,0 +1,51 @@
+#naslov {
+    font-weight: bolder;
+}
+
+#meni {
+    margin-top: 10px;
+}
+
+#dugmici {
+    margin-left: 65px;
+}
+
+#prazanDeo {
+    background-color: lightblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 20px;
+}
+
+#sredinaRed {
+    margin-left: 5px; 
+    margin-right: 5px;
+}
+
+#alert-link {
+    color: black;
+    font-weight: bold;
+}
+
+#paginacija {
+    justify-content: center;
+}
+
+#siviLink {
+    color: gray;
+}
+
+#tabela {
+    text-align: center;
+}
+
+#horLinija {
+    margin-top: 20px;
+    background-color: lightblue;
+    height: 3px;
+    margin-bottom: 20px;
+}
+
+#radio-forma {
+    text-align: center;
+}

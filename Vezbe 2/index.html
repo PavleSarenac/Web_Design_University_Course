@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>Dokument 1</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <style>
+            h2 {
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="color: orange">Naslov 2</h2>
+
+        <p id="idP">idP</p>
+        <p class="p1">p p1</p>
+        <div class="p1">div p1</div>
+        <!--<font color="red">tekst crvene boje</font>
+            ovo se sada radi u css, a ne preko font taga
+        -->
+        <img src="slike/image.jpeg" alt="Slika sa fotoaparatom"
+            width="200px" height="200px">
+
+        <table border="1">
+            <caption>Naslov tabele</caption>
+            <tr>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Mejl</th>
+                <th colspan="2">Datum rodjenja</th>
+            </tr>
+            <tr>
+                <td>Pera</td>
+                <td>Peric</td>
+                <td>pera@gmail.com</td>
+                <td>12-12-</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Mika</td>
+                <td rowspan="2">Mikic</td>
+                <td>mika@gmail.com</td>
+                <td rowspan="2">01-01-</td>
+                <td rowspan="2">1993</td>
+            </tr>
+            <tr>
+                <td>mika123@gmail.com</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <tr>
+                <td>Kol1</td>
+                <td>Kol2</td>
+                <td>Kol3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">1.1</td>
+                <td rowspan="2">2.1</td>
+                <td>3.1</td>
+            </tr>
+            <tr>
+                <td>Novi sadrzaj</td>
+            </tr>
+            <tr>
+                <td>tekst</td>
+                <td colspan="2" rowspan="2">siroka</td>
+            </tr>
+            <tr>
+                <td>tekst</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <form action="">
+            Text: <input type="text" name="polje1" id="" value="Polje1"
+            placeholder="unesite polje" size="10" disabled>
+            <br>
+            Lozinka: <input type="password" required maxlength="5" minlength="3">
+            <br>
+            <input type="button" value="Button">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <!--<button>Button</button>-->
+            <br>
+            Pol:<input type="radio" name="pol" id="pol1"><label for="pol1">M</label>
+            <input type="radio" name="pol">Z
+            <br>
+            Omiljeni dan: <input type="checkbox" name="" id="" checked>ponedeljak
+            <input type="checkbox">subota
+            <br>
+            Drzava:
+            <select name="" id="" size="2" multiple>
+                <option value="">Srbija</option>
+                <option value="">BiH</option>
+                <option value="" selected>Makedonija</option>
+            </select>
+            <br>
+            <textarea name="" id="" cols="50" rows="5"></textarea>
+
+            <br>
+            <fieldset>
+                <legend>HTML 5 elementi</legend>
+                <input type="color">
+                <input type="date">
+                <input type="time">
+                <input type="week">
+                <input type="range" min="1" max="3">
+                <input type="number">
+                <input type="mail">
+                <input type="tel">
+            </fieldset>
+        </form>
+    </body>
+</html>

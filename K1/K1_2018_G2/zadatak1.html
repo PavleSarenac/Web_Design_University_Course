@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        #stranica {
+            width: 60%;
+        }
+
+        #header {
+            height: 75px;
+            background-color: #8c8c8c;
+        }
+
+        #header-text {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        #footer-text {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 25px;
+            font-size: large;
+        }
+
+        #welcome-text {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 50px;
+            font-size: large;
+        }
+
+        #lista {
+            font-weight: bold; 
+            font-style: italic; 
+            font-family: 'Times New Roman', Times, serif; 
+            font-size: larger;
+        }
+
+        #main-text {
+            font-weight: bold; 
+            font-family: 'Times New Roman', Times, serif; 
+            font-size: x-large;
+            text-align: center;
+        }
+
+        #main-small {
+            font-weight: bold; 
+            font-family: 'Times New Roman', Times, serif; 
+            font-size: large;
+        }
+
+        #trakeStrana {
+            background-color: #d9d9d9;
+        }
+
+        #main {
+            background-color: #f2f2f2;
+        }
+
+        td {
+            padding-bottom: 20px;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="stranica" class="container">
+        <div id="header" class="row">
+            <h1 id="header-text">Turistička agencija</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="slike/sun.png" alt="" style="margin-left: 40px;">
+            </div>
+            <div class="col-sm-6">
+                <h1 id="welcome-text">
+                    Dobro došli na sajt naše turističke agencije. Za dodatne informacije javite nam se na telefon 011/1234567
+                </h1>
+            </div>
+            <div class="col-sm-3">
+                <img src="slike/sun.png" alt="" style="margin-left: 40px;">
+            </div>
+        </div>
+        <div class="row">
+            <div id="trakeStrana" class="col-sm-3">
+                <span id="welcome-text" style="margin-left: 70px;">Ponuda:</span>
+                <br><br>
+                <ol id="lista">
+                    <li>
+                        <span style="color: blue">Letovanja</span>
+                        <ul type="circle">
+                            <li>Španija</li>
+                            <li>Turska</li>
+                            <li>Grčka</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span style="color: blue">Zimovanja</span>
+                        <ul type="square">
+                            <li>Italija</li>
+                            <li>Švajcarska</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span style="color: blue">Izleti</span>
+                        <ul type="disc">
+                            <li>Prag</li>
+                            <li>Beč</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div id="main" class="col-sm-6">
+                <div class="row">
+                    <span id="main-text">Rezervacije:</span>
+                </div>
+                <div class="row">
+                    <div id="main-small" class="offset-sm-1">
+                        <table>
+                            <tr>
+                                <td>Ime i prezime:</td>
+                                <td><input type="text" name="" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>Mejl:</td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>Broj osoba:</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="background-color: white;">1</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="">1</a></li>
+                                            <li><a class="dropdown-item" href="">2</a></li>
+                                            <li><a class="dropdown-item" href="">3</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Osobine:</td>
+                                <td>
+                                    <input type="checkbox" name="" id="">Klima <br>
+                                    <input type="checkbox" name="" id="">TV <br>
+                                    <input type="checkbox" name="" id="">Terasa <br>
+                                    <input type="checkbox" name="" id="">Mini bar
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <button>Odustani</button>
+                                </td>
+                                <td style="text-align: center;">
+                                    <button>Potvrdi</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="trakeStrana" class="col-sm-3"></div>
+        </div>
+        <div id="header" class="row">
+            <h3 id="footer-text">Sva prava su zadržana</h3>
+        </div>
+    </div>
+</body>
+</html>
