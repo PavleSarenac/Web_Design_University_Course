@@ -72,7 +72,7 @@ $(document).ready(function () {
         clickAllowed = true;
     }
 
-    $("#dugme").click(function () {
+    $("#dugme").click(async function () {
         numOfCells = parseInt(localStorage.getItem("numOfCells"));
         startMemoryGame();
     });
