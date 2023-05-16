@@ -3,19 +3,11 @@ $(document).ready(function () {
     let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     function validateKorPoruka() {
-        if (/^[A-Z]+$/.test($("#korPoruka").val())) {
-            return true;
-        } else {
-            return false;
-        }
+        return /^[A-Z]+$/.test($("#korPoruka").val());
     }
 
     function validatePomeraj() {
-        if (/^\d+$/.test($("#pomeraj").val()) && parseInt($("#pomeraj").val()) > 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return /^\d+$/.test($("#pomeraj").val()) && parseInt($("#pomeraj").val()) > 0;
     }
 
     function encrypt() {

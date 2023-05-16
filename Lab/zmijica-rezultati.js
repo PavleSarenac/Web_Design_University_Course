@@ -19,7 +19,7 @@ $(document).ready(function () {
                 bestScores.pop();
             }
             localStorage.setItem("bestScores", JSON.stringify(bestScores));
-        } else if (mostRecentScore) {
+        } else if (mostRecentUsername) {
             bestScores.push({
                 username: mostRecentUsername,
                 score: mostRecentScore
