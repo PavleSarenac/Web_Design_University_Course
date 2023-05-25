@@ -3,7 +3,9 @@
     <table>
       <tr v-for="book in books" :key="book.id">
         <td>
-          <Book :myBook="book"></Book>
+          <router-link :to="/bookdetails/ + book.id">
+            <Book :myBook="book"></Book>
+          </router-link>
         </td>
       </tr>
     </table>
