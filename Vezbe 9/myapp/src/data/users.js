@@ -8,11 +8,11 @@ const allUsers = [
     },
     {
         firstname: "admin",
-        lastname: "admin",
+        lastname: "adminovic",
         username: "admin",
         password: "admin123",
         type: 1
     }
-]
+];
 
 export default allUsers;
