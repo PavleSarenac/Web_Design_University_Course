@@ -69,15 +69,14 @@
 
 <script>
   import ShowBooks from "@/components/ShowBooks.vue"
-  import { $vfm, VueFinalModal, ModalsContainer } from "vue-final-modal"
+  import { $vfm, VueFinalModal } from "vue-final-modal"
   import allUsers from "../data/users.js"
 
   export default {
     name: "HomeView",
     components: {
       ShowBooks,
-      VueFinalModal,
-      ModalsContainer
+      VueFinalModal
     },
     data() {
       return {
@@ -96,12 +95,22 @@
         $vfm.show("loginModal");
       },
       confirm() {
-        let user = allUsers.find(user => user.username == this.username && user.password == this.password);
+        let users = JSON.parse(localStorage.getItem("allUsers"));
+        let user = users.find(user => user.username == this.username && user.password == this.password);
         if (user) {
-          alert(user.firstname);
+          if (user.type == 0) {
+            this.$router.push("user");
+          } else {
+            this.$router.push("admin");
+          }
         } else {
           alert("Username is not in the database.");
         }
+      }
+    },
+    created() {
+      if (localStorage.getItem("allUsers") == null) {
+        localStorage.setItem("allUsers", JSON.stringify(allUsers));
       }
     }
   }
