@@ -108,8 +108,14 @@
                         }
                     }
                 }
-                if (!found) {
-                    this.error = "No users in the database.";
+                if (this.username == "") {
+                    this.error = "Username is necessary.";
+                } 
+                if (this.password == "") {
+                    this.error += "Password is necessary.";
+                }
+                if (!found && this.username != "" && this.password != "") {
+                    this.error += "No users in the database.";
                 }
             },
             register() {
